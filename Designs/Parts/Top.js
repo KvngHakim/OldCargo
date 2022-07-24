@@ -9,10 +9,13 @@ export function Top({navigation}) {
                 
                 <Text style={styles.brandText}>OldCargo</Text>
             </View>
-            <TouchableOpacity>
-                <Button mode='text' color='black' style={styles.btn} 
-                onPress= {() => navigation.navigate('Signin')}
-                >Sign In</Button>
+            <TouchableOpacity style={styles.btnTouch}
+                onPress={() => 
+                    navigation.navigate('Intro')
+                }
+            
+            >
+                <Text style={styles.btn} >Sign in</Text>
             </TouchableOpacity>
         </View>
     )
@@ -28,6 +31,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontStyle: 'italic',
         paddingTop: 5,
+        paddingLeft: 15,
         color: 'deep blue'
     },
     brandL:{
@@ -35,7 +39,10 @@ const styles = StyleSheet.create({
     },
     btn:{
         paddingTop: 10,
-        overlayColor: 'blue'
+        paddingRight: 10
+    },
+    btnTouch:{
+
     }
 })
 

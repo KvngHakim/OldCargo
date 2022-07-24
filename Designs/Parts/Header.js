@@ -14,7 +14,7 @@ export function Header() {
     return (
         <View >
             
-           
+            {/* <Top /> */}
             
             <View style={styles.searchCat}>
                 <Text style={[styles.searchText, { fontSize: 40 }]}>Find and Trade </Text>
@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 20,
         backgroundColor: 'white',
-        width: '100%'
+        width: 320
+        
 
     },
     searchCat: {
@@ -96,7 +97,8 @@ const styles = StyleSheet.create({
     },
     searchIcons: {
         width: 40,
-        height: 40
+        height: 40,
+        marginLeft: 10
     }
 
 })

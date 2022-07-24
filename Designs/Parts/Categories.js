@@ -3,7 +3,7 @@ import { StyleSheet, ScrollView, Text, View, Image,  TouchableOpacity,  } from '
 
 export function Categories() {
     return (
-        <ScrollView>
+        <ScrollView style={styles.categoryParent}>
             <View style={styles.newEx}>
                 <TouchableOpacity style={styles.categoryItems}>
                     <Image
@@ -76,11 +76,13 @@ export function Categories() {
 
                 <TouchableOpacity style={styles.categoryItems}>
                     <Image
-                        source={require('../Images/photos/toys.jpg')}
+                        source={require('../Images/photos/necklaces.jpg')}
                         style={{ width: 100, height: 100 }}
                     />
-                    <Text style={styles.categoryItemText}>Toys</Text>
+                    <Text style={styles.categoryItemText}>Neck Accessories</Text>
                 </TouchableOpacity>
+
+             
             </View>
 
             
@@ -103,11 +105,12 @@ export function Categories() {
 
                 <TouchableOpacity style={styles.categoryItems}>
                     <Image
-                        source={require('../Images/photos/necklaces.jpg')}
+                        source={require('../Images/photos/toys.jpg')}
                         style={{ width: 100, height: 100 }}
                     />
-                    <Text style={styles.categoryItemText}>Neck Accessories</Text>
+                    <Text style={styles.categoryItemText}>Toys</Text>
                 </TouchableOpacity>
+                
             </View>
 
             
@@ -171,6 +174,9 @@ export function Categories() {
 }
 
 const styles = StyleSheet.create({
+    categoryParent:{
+        alignContent: 'center',
+    },
     newEx:{
         flexDirection: 'row',
         justifyContent: 'space-around',
