@@ -1,11 +1,13 @@
 import { StyleSheet, ScrollView, Text, View, Image,  TouchableOpacity,  } from 'react-native';
 
 
-export function Categories() {
+export function Categories(navigation) {
     return (
         <ScrollView style={styles.categoryParent}>
             <View style={styles.newEx}>
-                <TouchableOpacity style={styles.categoryItems}>
+                <TouchableOpacity style={styles.categoryItems}
+                    onPress={() => navigation.navigate('Ad page')}
+                >
                     <Image
                         source={require('../Images/icons/more.png')}
                         style={{ width: 100, height: 100, backgroundColor: 'red'}}

@@ -2,7 +2,9 @@ import { View, Text, Image, StyleSheet} from 'react-native';
 
 export function Settings () {
     return(
-        <View></View>
+        <View>
+            
+        </View>
     )
 }
 
